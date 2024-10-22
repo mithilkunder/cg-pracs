@@ -6,12 +6,12 @@ void main()
 	int x,y,p,x1,y1,x2,y2,dx,dy,xinc,yinc,i,pinc;
 	float m;
 	int gd=DETECT,gm;
-	initgraph(&gd,&gm,"C:\\YOGISOFT\BGI");
+	initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
 	printf("Enter Starting Co-ordinates");
 	scanf("%d %d",&x1,&y1);
 	printf("Enter End Co-ordinates");
 	scanf("%d %d",&x2,&y2);
-       //	printf("x1=%d\t y1=%d\t x2=%d\t y2=%d\t",x1,y1,x2,y2);
+      
 	dx=x2-x1;
 	dy=y2-y1;
 	m=dy/dx;
@@ -19,12 +19,9 @@ void main()
 	y=y1;
 	p=2*dy-dx;
 	detectgraph(&gd,&gm);
-//	printf("dx=%d\t",dx);
-  //	printf("dy=%d\t",dy);
-    //  printf("p=%d\t",p);
+
 	printf("m=%f\t",m);
-     // printf("y=%d\t",y);
-     // printf("x=%d\t",x);
+    
 	putpixel(x,y,7);
 	if(m<1)
 	{
